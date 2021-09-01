@@ -3,15 +3,16 @@
 }
 
 body {
-    
     background-color: rgb(247, 234, 225);
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 }
 
 main {
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 
 div {
@@ -56,11 +57,72 @@ h4 {
     padding: 0;
 }
 
-#expand-reso:hover {
+h5 {
+    color: rgb(246,	244,	181	);
+    text-shadow: 1px 1px rgb(54,	0,	0);
+    font-family: 'Indie Flower', cursive;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bands i {
+    display: inline-block;
+    margin-left: 2em;
+    font-size: 2em;
+    color: rgb(246,	244,	181	);
+}
+
+.toggle-zone {
+    display: inline-block;
+}
+
+.unexpand-reso {
+    display: none;
+}
+
+.expander-btn {
+    display: block;
+    transform-origin: center;
+    transition: all .2s ease-in-out;
+}
+
+.expander-btn:hover {
     cursor: pointer;
+    transform: scale(1.3);
     color: white;
-    transition: 0.2s;
-    text-shadow: 2px 2px rgb(134,0,3);
+    /* text-shadow: 4px 2px rgb(180, 178, 120); */
+}
+
+.content {
+    display: none;
+    margin: 2em;
+    padding: 1em;
+    width: 55%;
+    border-radius: 1em;
+}
+
+
+.reservation-content {
+    display: none;
+    background-color: rgb(134,0,3);
+}
+
+.content p {
+    color: rgb(246,	244,	181	);
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+}
+
+.offer-content {
+    display: none;
+    background-color: rgb(209,44,31);
+}
+
+.gallery-content {
+    display: none;
+    background-color: #fff;
 }
 
 .container {
@@ -71,12 +133,12 @@ h4 {
 .biggest-bg {
     border-radius: 1em;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 1em;
 }
 
 .bands {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .colorband {
@@ -97,7 +159,7 @@ h4 {
     background-color: rgb(236,	151,7);
 }
 .colband-5 {
-    background-color: rgb(246,	244,	181	);
+    background-color: rgb(55, 99, 187);
     border-radius: 0 0 1em 1em;
 }
 .colband-6 {
@@ -130,7 +192,7 @@ h4 {
     width: 490px;
     height: 490px;
     /* background-image: url("../img/hero.png"); */
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.55)), url(../img/hero.png);
+    background-image: -webkit-linear-gradient(rgba(100, 100, 100, 0.2), rgba(0, 0, 0, 0.3)), url(../img/hero.png);
     background-size: contain;
 }
 
@@ -173,11 +235,4 @@ footer a:hover {
 
 .bands h3 {
     display: inline-block;
-}
-
-.bands i {
-    display: inline-block;
-    margin-left: 2em;
-    font-size: 2em;
-    color: rgb(246,	244,	181	);
 }

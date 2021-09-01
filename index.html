@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/db11a3d696.js" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
     <title>BARV Home</title>
 </head>
 <body>
@@ -21,26 +20,89 @@
         <div class="container biggest-bg">
             <section class="bands">
                 <div class="colorband colband-1">
-                    <h3>RESERVATIONS</h3>
-                    <i class="far fa-caret-square-down" id="expand-reso"></i>
+                    <section class="band-content-1">
+                        
+                        <i class="far fa-calendar-alt"></i><h3>RESERVATIONS</h3>
+                        <div class="reso-expand-toggle toggle-zone">
+                            <i class="far fa-caret-square-down expand-reso expander-btn"></i>
+                            <i class="far fa-caret-square-up unexpand-reso expander-btn" style="display: none;"></i>
+                        </div>
+                    
+                        <section class="reservation-content content">
+                            <p>Hey, this is where you can make a reservation!  Prolly need a calendar here or some shit!</p>
+                        </section>
+
+                    </section>
                 </div>
 
                 <div class="colorband colband-2">
-                    <h3>WHAT WE OFFER</h3>
-                    <i class="far fa-caret-square-down"></i>
+                    <section class="band-content-2">
+                        <i class="fas fa-cocktail"></i><h3>WHAT WE OFFER</h3>
+                        <div class="offer-expand-toggle toggle-zone">
+                            <i class="far fa-caret-square-down expand-offer expander-btn"></i>
+                            <i class="far fa-caret-square-up unexpand-offer expander-btn" style="display: none;"></i>
+                        </div>
+
+                        <section class="offer-content content">
+                            <h4>Let's Party!</h4>
+                            <h5>You come to us:</h5>
+                            <p>Here's where we let you know where we'll be!</p>
+                            <h5>We come to you:</h5>
+                            <p>Book us for your private event!</p>
+                        </section>
+                    
+                    </section>
+                    
                 </div>
 
                 <div class="colorband colband-3">
-                    <h3>CONTACT US</h3>
-                    <i class="far fa-caret-square-down"></i>
+                    <section class="band-content-3">
+                        <i class="fas fa-camera-retro"></i><h3>GALLERY</h3>
+                        <div class="gallery-expand-toggle toggle-zone">
+                            <i class="far fa-caret-square-down expand-gallery expander-btn"></i>
+                            <i class="far fa-caret-square-up unexpand-gallery expander-btn" style="display: none;"></i>
+                        </div>
+                        
+                        <section class="gallery-content content">
+                            <h4>A photo gallery!</h4>
+                        </section>
+                        
+                    </section>
+                    
                 </div>
 
                 <div class="colorband colband-4">
-                    <h3>GALLERY</h3>
-                    <i class="far fa-caret-square-down"></i>
+                    <section class="band-content-4">
+                        <i class="fas fa-at"></i><h3>CONTACT US</h3>
+                        <div class="contact-expand-toggle toggle-zone">
+                            <i class="far fa-caret-square-down expand-contact expander-btn"></i>
+                            <i class="far fa-caret-square-up unexpand-contact expander-btn" style="display: none;"></i>
+                        </div>
+
+                        <section class="contact-content content">
+                            <h4>A Contact Form!</h4>
+                        </section>
+                        
+                    </section>
                 </div>
 
-                <div class="colorband colband-5"></div>
+                <div class="colorband colband-5">
+                    
+                    <section class="band-content-5">
+                        <i class="fab fa-elementor"></i><h3>TODAY'S MENU</h3>
+                        <div class="menu-expand-toggle toggle-zone">
+                            <i class="far fa-caret-square-down expand-menu expander-btn"></i>
+                            <i class="far fa-caret-square-up unexpand-menu expander-btn" style="display: none;"></i>
+                        </div>
+                        
+
+                        <section class="menu-content content">
+                            <h4>A Menu of Drinks!</h4>
+                        </section>
+                    </section>
+                </div>
+
+
 
                 <!-- The below div colbands go into some cooler colors.  I might be too many bands tho... -->
 
@@ -49,7 +111,7 @@
                 <div class="colorband colband-8"></div>
                 <div class="colorband colband-9"></div>
                 <div class="colorband colband-10"></div>
-     -->
+                                                    -->
                 
                 <div class="sun">
                         <div class="hero">
@@ -76,6 +138,7 @@
         <span>&#169 BARV 2021</span>
     </footer>
     
+    <script src="./js/index.js"></script>
     
 </body>
 </html>
