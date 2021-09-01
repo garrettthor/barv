@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: rgb(247, 234, 225);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block
+}
+
+h1 {
+    color: rgb(236,	151,7);
+    text-shadow: 2px 2px rgb(54,	0,	0);
+    text-align: center;
+    font-family: 'OLD SPORT 01 COLLEGE NCV';
+    font-size: 100px;
+    font-weight: 50;
+    margin: .5em 0 -20px 0;
+    padding: 0 0 0 0;
+}
+
+h3 {
+    color: rgb(246,	244,	181	);
+    text-shadow: 1px px rgb(54,	0,	0);
+    text-align: left;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    font-weight: 50;
+    margin: 0 0 0 3rem;
+    padding: .8em 0 0 0;
+}
+
+h4 {
+    color: rgb(246,	244,	181	);
+    text-shadow: 1px 1px rgb(54,	0,	0);
+    font-family: 'Indie Flower', cursive;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a h3:hover {
+    color: #fff;
+    transition: .2s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.biggest-bg {
+    border-radius: 1em;
+    width: 100%;
+    height: 100vh;
+    margin: 0 1em;
+}
+
+.bands {
+    margin-top: 5em;
+}
+
+.colorband {
+    height: 5em;
+}
+
+.colband-1 {
+    background-color: rgb(54,	0,	0);
+    border-radius: 1em 1em 0 0;
+}
+.colband-2 {
+    background-color: rgb(134,0,3);
+}
+.colband-3 {
+    background-color: rgb(209,44,31);
+}
+.colband-4 {
+    background-color: rgb(236,	151,7);
+}
+.colband-5 {
+    background-color: rgb(246,	244,	181	);
+}
+.colband-6 {
+    background-color: rgb(55, 99, 187);
+}
+.colband-7 {
+    background-color: rgb(7, 45, 119);
+}
+.colband-8 {
+    background-color: rgb(126, 47, 175);
+    border-radius: 0 0 1em 1em;
+}
+
+.sun {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(246,	244,	181	);
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    border-radius: 50%;
+    width: 490px;
+    height: 490px;
+    /* background-image: url("../img/hero.png"); */
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.55)), url(../img/hero.png);
+    background-size: contain;
+}
+
+footer {
+    position: fixed;
+    padding: 1em 1em 0 1em;
+    width: 100%;
+    height: 5em;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+footer ul {
+    margin: 0 0 0.5em 0;
+    padding-left: 0; 
+}
+
+footer ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 3em;
+}
+
+footer span {
+    font-family: 'Indie Flower', cursive;
+    margin-top: 2.5em;
+}
+
+footer a {
+    color: rgb(209,44,31);
+}
+
+footer a:hover {
+    color: rgb(236,	151,7);
+    transition: 0.3s;
+}
+
+.bands h3 {
+    display: inline-block;
+}
+
+.bands i {
+    display: inline-block;
+    margin-left: 2em;
+    font-size: 2em;
+    color: rgb(246,	244,	181	);
+}
