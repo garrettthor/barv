@@ -25,7 +25,7 @@ a {
 }
 
 h1 {
-    color: rgb(236,	151,7);
+    color: rgb(246,	244,	181	);
     text-shadow: 2px 2px rgb(54,	0,	0);
     text-align: center;
     font-family: 'OLD SPORT 01 COLLEGE NCV';
@@ -39,8 +39,8 @@ h3 {
     color: rgb(246,	244,	181	);
     text-shadow: 1px px rgb(54,	0,	0);
     text-align: left;
-    font-family: 'Indie Flower', cursive;
-    font-size: 30px;
+    font-family: 'Glory', sans-serif;
+    font-size: 2.1em;
     font-weight: 50;
     margin: 0 0 0 3rem;
     padding: .8em 0 0 0;
@@ -56,9 +56,11 @@ h4 {
     padding: 0;
 }
 
-a h3:hover {
-    color: #fff;
-    transition: .2s;
+#expand-reso:hover {
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+    text-shadow: 2px 2px rgb(134,0,3);
 }
 
 .container {
@@ -96,6 +98,7 @@ a h3:hover {
 }
 .colband-5 {
     background-color: rgb(246,	244,	181	);
+    border-radius: 0 0 1em 1em;
 }
 .colband-6 {
     background-color: rgb(55, 99, 187);
@@ -105,14 +108,14 @@ a h3:hover {
 }
 .colband-8 {
     background-color: rgb(126, 47, 175);
-    border-radius: 0 0 1em 1em;
+    
 }
 
 .sun {
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    background-color: rgb(246,	244,	181	);
+    background-color: rgb(236,	151,7);
     position: absolute;
     left: 50%;
     top: 12%;
@@ -150,7 +153,7 @@ footer ul {
 footer ul li {
     display: inline-block;
     text-decoration: none;
-    margin: 0 1em;
+    margin: 0 0.3em;
     font-size: 3em;
 }
 
