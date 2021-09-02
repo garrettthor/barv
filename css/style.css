@@ -264,7 +264,7 @@ and (max-device-width : 480px) {
 /* Styles */
 
     body {
-        background-image: -webkit-linear-gradient(rgba(0, 255, 179, 0.2), rgba(0, 0, 0, 0.8)), url(../img/Bar\ RV-8.JPG);
+        background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3));
         background-size: cover;
     }
 
@@ -287,6 +287,11 @@ and (max-device-width : 480px) {
         width: 18em;
         margin: 2em 0 0 0;
         padding: 0;
+    }
+
+    #lil-rv {
+        margin-top: 2em;
+        width: 10em;
     }
 
     .bands {
