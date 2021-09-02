@@ -18,7 +18,16 @@ function expandReso() {
         // Shifts the sun and hero over to the right and up a little
         document.querySelector('.sun').style="transition: 1s; left: 60%; top: 2%;"
 
-        document.querySelector('.colband-1').style="height: 30em; transition: 1s;";
+        // document.querySelector('.colband-1').style="height: 30em; transition: 1s;";
+
+
+        //trying to do it better?  i dont think this is much better tho...theres gotta be a cleaner way.
+        const colBand1 = document.querySelector('.colband-1')
+
+        colBand1.classList.add('colband-expanded');
+        colBand1.classList.remove('colband-init');
+
+
         document.querySelector('.colband-2').style="height: 1.5em; transition: 1s;";
         document.querySelector('.colband-3').style="height: 1em; transition: 1s;";
         document.querySelector('.colband-4').style="height: .75em; transition: 1s;";
@@ -41,7 +50,13 @@ function expandReso() {
         // Shifts the sun and hero back to original position
         document.querySelector('.sun').style="transition: 1s; left: 50%; top: 12%"
 
-        document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
+        // document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
+
+        const colBand1 = document.querySelector('.colband-1')
+
+        colBand1.classList.add('colband-init');
+        colBand1.classList.remove('colband-expanded');
+
         document.querySelector('.colband-2').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-3').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-4').style="height: 5em; transition: 1s;";

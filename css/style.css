@@ -146,8 +146,14 @@ h5 {
     margin-top: 3em;
 }
 
-.colorband {
+.colband-init {
     height: 5em;
+    transition: 1s;
+}
+
+.colband-expanded {
+    height: 30em;
+    transition: 1s;
 }
 
 .colband-1 {
@@ -167,7 +173,10 @@ h5 {
     background-color: rgb(55, 99, 187);
     border-radius: 0 0 1em 1em;
 }
-.colband-6 {
+
+/* Ain't gonna use these */
+
+/* .colband-6 {
     background-color: rgb(55, 99, 187);
 }
 .colband-7 {
@@ -176,7 +185,7 @@ h5 {
 .colband-8 {
     background-color: rgb(126, 47, 175);
     
-}
+} */
 
 .sun {
     border-radius: 50%;
