@@ -1,5 +1,3 @@
-console.log('js trabajando guey');
-
 // 1 - This section includes all the logic to toggle the expansion of the RESERVATION section.
 
 const resoToggleBtn = document.querySelector('.reso-expand-toggle');
@@ -55,9 +53,7 @@ function expandReso() {
             document.querySelector('.band-content-3').style="display: block;";
             document.querySelector('.band-content-4').style="display: block;";
             document.querySelector('.band-content-5').style="display: block;";
-        }, 1000)
-        
-        
+        }, 1000)  
     };
 };
 
