@@ -363,14 +363,18 @@ and (max-device-width : 480px) {
     }
 
     .mobile {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
     }
 
     .mobile-squares {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        height: 30em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        width: auto;
     }
 
     .mobile-banner-zone {
@@ -381,7 +385,7 @@ and (max-device-width : 480px) {
     }
 
     #barv-logo {
-        width: 20em;
+        width: 18em;
     }
 
     .square {
@@ -389,8 +393,8 @@ and (max-device-width : 480px) {
         flex-direction: column;
         align-items: center;
         justify-content:space-evenly;
-        height: 9.5em;
-        width: 9.5em;
+        height: 8.5em;
+        width: 8.5em;
         border-radius: 1em;
         margin: 0.5em;
     }
