@@ -358,6 +358,10 @@ and (max-device-width : 480px) {
         padding: 0;
     } */
 
+    body {
+        background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3));
+    }
+    
     .bands {
         display: none;
     }
@@ -441,6 +445,10 @@ and (max-device-width : 480px) {
     .square-6 img {
         margin-top: 2.75em;
         width: 7em;
+    }
+
+    footer {
+        display: none;
     }
 
 }
