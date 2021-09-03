@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
+.mobile {
+    display: none;
+}
+
 body {
     /* background-image: -webkit-linear-gradient(rgba(250, 207, 176, 0.7), rgba(255, 255, 255, 0.9)), url(../img/rvs-n-cacti-bg.png); */
+    /* background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3)); */
     background-size: 100%;
     background-color: rgb(247, 234, 225);
     padding: 0;
@@ -271,9 +276,10 @@ footer a:hover {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-
+/*
     body {
         background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3));
+        /* background-color: rgb(247, 234, 225); 
         background-size: cover;
     }
 
@@ -283,7 +289,6 @@ and (max-device-width : 480px) {
         height: 10em;
         left: 50%;
         top: 2%;
-/* because FUUUCK THIS SHIT */
         display: none;
     }
 
@@ -351,6 +356,87 @@ and (max-device-width : 480px) {
     footer div {
         margin-top: 2em;
         padding: 0;
+    } */
+
+    .bands {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-squares {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 30em;
+    }
+
+    .mobile-banner-zone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    #barv-logo {
+        width: 20em;
+    }
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        height: 9.5em;
+        width: 9.5em;
+        border-radius: 1em;
+        margin: 0.5em;
+    }
+
+    .square h3 {
+        font-size: 1.25em;
+        text-align: center;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .square i {
+        margin-left: 1em;
+        font-size: 3em;
+        color: rgb(246,	244,	181	);
+        margin: 0;
+    }
+
+    .square-1 {
+        background-color: rgb(54,	0,	0);
+    }
+
+    .square-2 {
+        background-color: rgb(134,0,3);
+    }
+
+    .square-3 {
+        background-color: rgb(209,44,31);
+    }
+
+    .square-4 {
+        background-color: rgb(236,	151,7);
+    }
+
+    .square-5 {
+        background-color: rgb(55, 99, 187);
+    }
+
+    .square-6 {
+        background-color: rgb(126, 47, 175);
+    }
+
+    .square-6 img {
+        margin-top: 2.75em;
+        width: 7em;
     }
 
 }
