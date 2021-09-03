@@ -361,7 +361,7 @@ and (max-device-width : 480px) {
     body {
         background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3));
     }
-    
+
     .bands {
         display: none;
     }
@@ -386,6 +386,7 @@ and (max-device-width : 480px) {
         flex-direction: column;
         align-items: center;
         margin-top: 1em;
+        margin-bottom: 0.5em;
     }
 
     #barv-logo {
@@ -426,6 +427,10 @@ and (max-device-width : 480px) {
         background-color: rgb(134,0,3);
     }
 
+    .square-2 h3 {
+        font-size: 1.15em;
+    }
+
     .square-3 {
         background-color: rgb(209,44,31);
     }
@@ -443,7 +448,7 @@ and (max-device-width : 480px) {
     }
 
     .square-6 img {
-        margin-top: 2.75em;
+        /* margin-top: 2.75em; */
         width: 7em;
     }
 
