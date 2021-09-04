@@ -8,8 +8,16 @@ resoToggleBtn.addEventListener('click', expandReso);
 
 let resoExpanded = false;
 
+const colBand1 = document.querySelector('.colband-1')
+const colBand2 = document.querySelector('.colband-2')
+const colBand3 = document.querySelector('.colband-3')
+const colBand4 = document.querySelector('.colband-4')
+const colBand5 = document.querySelector('.colband-5')
+
 function expandReso() {
     if(resoExpanded === false){
+
+        //EXPAND
 
         // Hide expand button and display collapse button instead
         expandResoBtn.style="display: none;";
@@ -22,7 +30,7 @@ function expandReso() {
 
 
         //trying to do it better?  i dont think this is much better tho...theres gotta be a cleaner way.
-        const colBand1 = document.querySelector('.colband-1')
+
 
         colBand1.classList.add('colband-expanded');
         colBand1.classList.remove('colband-init');
@@ -43,12 +51,14 @@ function expandReso() {
         
     } else if(resoExpanded === true){
 
+        //COLLAPSE
+
         // Hide collapse button and display expand button instead
         expandResoBtn.style="display: inline-block;";
         unExpandResoBtn.style="display: none;";
 
         // Shifts the sun and hero back to original position
-        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 12%"
+        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
 
         // document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
 
@@ -106,7 +116,7 @@ function expandOffer() {
         document.querySelector('.unexpand-offer').style="display: none;";
 
         // Shifts the sun and hero back to original position
-        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 12%"
+        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
 
         document.querySelector('.colband-2').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
@@ -161,7 +171,7 @@ function expandGallery() {
         document.querySelector('.unexpand-gallery').style="display: none;";
 
         // Shifts the sun and hero back to original position
-        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 12%"
+        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
 
         document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-2').style="height: 5em; transition: 1s;";
@@ -218,7 +228,7 @@ function expandContact(){
         document.querySelector('.unexpand-contact').style="display: none;";
 
         // Shifts the sun and hero back to original position
-        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 12%"
+        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
 
         document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-2').style="height: 5em; transition: 1s;";
@@ -274,7 +284,7 @@ function expandMenu(){
         document.querySelector('.unexpand-menu').style="display: none;";
 
         // Shifts the sun and hero back to original position
-        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 12%"
+        document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
 
         document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-2').style="height: 5em; transition: 1s;";
@@ -293,3 +303,40 @@ function expandMenu(){
         document.querySelector('.menu-content').style="display: none;";
     };
 };
+
+// MOBILE Expansion/Collapse logic.
+// for the lil squares... they're just little guys...
+
+const square1 = document.querySelector('.square-1');
+const square2 = document.querySelector('.square-2');
+const square3 = document.querySelector('.square-3');
+const square4 = document.querySelector('.square-4');
+const square5 = document.querySelector('.square-5');
+const square6 = document.querySelector('.square-6');
+
+square1.addEventListener('click', sq1ToggleExpand);
+
+let square1Expanded = false;
+function sq1ToggleExpand() {
+    if(square1Expanded === false){
+        square1.style="width: 18em; transition: 1s;"
+    // document.querySelector('.sq-1-init-content').classList.add('fade out');
+    setTimeout(function(){
+        square1.style="width: 18em; height: 28em; transition: 1s;"
+        document.querySelector('.sq-1-exp-content').style="display: flex;"
+        document.querySelector('.sq-1-init-content').style="display: none;"
+        
+    }, 1000)
+    
+    square2.style="width: 0; height: 0; transition: 1s;"
+    square3.style="width: 0; height: 0; transition: 1s;"
+    square4.style="width: 0; height: 0; transition: 1s;"
+    square5.style="width: 0; height: 0; transition: 1s;"
+    square6.style="width: 0; height: 0; transition: 1s;"
+
+    square1Expanded = true;
+
+    }
+    
+    
+}

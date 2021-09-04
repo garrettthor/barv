@@ -8,9 +8,9 @@
 
 body {
     /* background-image: -webkit-linear-gradient(rgba(250, 207, 176, 0.7), rgba(255, 255, 255, 0.9)), url(../img/rvs-n-cacti-bg.png); */
-    /* background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3)); */
+    background: linear-gradient(to bottom right,rgb(212, 238, 238) ,rgba(165, 206, 206,0.9));
+    /* background-color: rgb(212, 238, 238); */
     background-size: 100%;
-    background-color: rgb(247, 234, 225);
     padding: 0;
     margin: 0;
     min-height: 100vh;
@@ -50,7 +50,7 @@ h3 {
     font-size: 2.1em;
     font-weight: 50;
     margin: 0 0 0 3rem;
-    padding: .8em 0 0 0;
+    padding: .65em 0 0 0;
 }
 
 h4 {
@@ -175,7 +175,7 @@ h5 {
     background-color: rgb(236,	151,7);
 }
 .colband-5 {
-    background-color: rgb(55, 99, 187);
+    background-color: rgb(57,99,81);
     border-radius: 0 0 1em 1em;
 }
 
@@ -253,10 +253,12 @@ footer span {
 
 footer a {
     color: rgb(209,44,31);
+    transition: 0.3s;
 }
 
 footer a:hover {
     color: rgb(236,	151,7);
+    transform: scale(1.2);
     transition: 0.3s;
 }
 
@@ -276,90 +278,9 @@ footer a:hover {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-/*
-    body {
-        background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3));
-        /* background-color: rgb(247, 234, 225); 
-        background-size: cover;
-    }
-
-    .sun {
-
-        width: 10em;
-        height: 10em;
-        left: 50%;
-        top: 2%;
-        display: none;
-    }
-
-    .hero {
-        width: 9.75em;
-        height: 9.75em;
-    }
-
-    #barv-logo-mobile {
-        width: 18em;
-        margin: 2em 0 0 0;
-        padding: 0;
-    }
-
-    #lil-rv {
-        margin-top: 2em;
-        width: 10em;
-    }
-
-    .bands {
-        margin-top: 3em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-        margin: 0 0 0 1.2em;
-    }
-
-    .colorband {
-        height: 3.5em;
-    }
-
-    .bands i {
-        display: inline-block;
-        margin-left: 1em;
-        font-size: 1.25em;
-        color: rgb(246,	244,	181	);
-    }
-
-    .mobile-banner-zone {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer {
-        margin-bottom: 1em;
-    }
-
-    footer a {
-        color: rgb(246,	244,	181	);
-    }
-
-    footer span {
-        color: rgb(246,	244,	181	);
-    }
-
-    footer ul li {
-        display: inline-block;
-        text-decoration: none;
-        margin: 0 0.2em;
-        font-size: 2em;
-    }
-
-    footer div {
-        margin-top: 2em;
-        padding: 0;
-    } */
 
     body {
-        background: linear-gradient(rgba(60, 153, 125, 0.9), rgba(60, 153, 125, 0.3));
+        background: linear-gradient(to bottom right,rgb(125, 192, 185),rgb(212, 238, 238) );
     }
 
     .bands {
@@ -378,7 +299,9 @@ and (max-device-width : 480px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: auto;
-        width: auto;
+        width: 19em;
+        margin:0;
+        padding:0;
     }
 
     .mobile-banner-zone {
@@ -398,8 +321,8 @@ and (max-device-width : 480px) {
         flex-direction: column;
         align-items: center;
         justify-content:space-evenly;
-        height: 8.5em;
-        width: 8.5em;
+        height: 8.25em;
+        width: 8.25em;
         border-radius: 1em;
         margin: 0.5em;
     }
@@ -419,12 +342,26 @@ and (max-device-width : 480px) {
         margin: 0;
     }
 
+    .square-expanded-header {
+
+    }
+
     .square-1 {
         background-color: rgb(54,	0,	0);
+        /* border: 5px solid rgb(54,	0,	0); */
+        /* background-color: rgba(54,	0,	0, 0.7); */
     }
+
+    .sq-1-exp-content {
+        display: none;
+    }
+
+    
 
     .square-2 {
         background-color: rgb(134,0,3);
+        /* border: 5px solid rgb(134,0,3); */
+        /* background-color: rgba(134,0,3,0.7); */
     }
 
     .square-2 h3 {
@@ -432,19 +369,27 @@ and (max-device-width : 480px) {
     }
 
     .square-3 {
-        background-color: rgb(209,44,31);
+        background-color:  rgb(209,44,31);
+        /* border: 5px solid  rgb(209,44,31); */
+        /* background-color: rgba(209,44,31,0.6); */
     }
 
     .square-4 {
-        background-color: rgb(236,	151,7);
+        background-color:  rgb(236,	151,7);
+        /* border: 5px solid  rgb(236,	151,7); */
+        /* background-color: rgba(236,	151,7,0.7); */
     }
 
     .square-5 {
-        background-color: rgb(55, 99, 187);
+        background-color:   rgb(57,99,81);
+        /* border: 5px solid   rgb(57,99,81); */
+        /* background-color:  rgb(104, 114, 110,0.8); */
     }
 
     .square-6 {
-        background-color: rgb(126, 47, 175);
+        background-color:  rgb(49, 174, 136);
+        /* border: 5px solid  rgb(49, 174, 136); */
+        /* background-color: rgba(49, 174, 136,0.7); */
     }
 
     .square-6 img {
@@ -455,6 +400,35 @@ and (max-device-width : 480px) {
     footer {
         display: none;
     }
+
+    .fade-in {
+        animation: fadeIn ease 3s;
+        -webkit-animation: fadeIn ease 3s;
+        -moz-animation: fadeIn ease 3s;
+        -o-animation: fadeIn ease 3s;
+        -ms-animation: fadeIn ease 3s;
+      }@keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      .fade-out {
+        animation: fadeOut ease 8s;
+        -webkit-animation: fadeOut ease 8s;
+        -moz-animation: fadeOut ease 8s;
+        -o-animation: fadeOut ease 8s;
+        -ms-animation: fadeOut ease 8s;
+      }@keyframes fadeOut {
+        0% {
+          opacity:1;
+        }
+        100% {
+          opacity:0;
+        }
+      }
 
 }
 
