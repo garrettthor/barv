@@ -26,14 +26,14 @@ function expandReso() {
         // Shifts the sun and hero over to the right and up a little
         document.querySelector('.sun').style="transition: 1s; left: 60%; top: 2%;"
 
-        // document.querySelector('.colband-1').style="height: 30em; transition: 1s;";
+        document.querySelector('.colband-1').style="height: 30em; transition: 1s;";
 
 
         //trying to do it better?  i dont think this is much better tho...theres gotta be a cleaner way.
 
 
-        colBand1.classList.add('colband-expanded');
-        colBand1.classList.remove('colband-init');
+        // colBand1.classList.add('colband-expanded');
+        // colBand1.classList.remove('colband-init');
 
 
         document.querySelector('.colband-2').style="height: 1.5em; transition: 1s;";
@@ -60,12 +60,11 @@ function expandReso() {
         // Shifts the sun and hero back to original position
         document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
 
-        // document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
+        document.querySelector('.colband-1').style="height: 5em; transition: 1s;";
 
-        const colBand1 = document.querySelector('.colband-1')
 
-        colBand1.classList.add('colband-init');
-        colBand1.classList.remove('colband-expanded');
+        // colBand1.classList.add('colband-init');
+        // colBand1.classList.remove('colband-expanded');
 
         document.querySelector('.colband-2').style="height: 5em; transition: 1s;";
         document.querySelector('.colband-3').style="height: 5em; transition: 1s;";
@@ -317,25 +316,46 @@ const square6 = document.querySelector('.square-6');
 square1.addEventListener('click', sq1ToggleExpand);
 
 let square1Expanded = false;
+
+// Square sizes
+const initSqSize = 'width: 8.25em; transition: 1s;'
+const expSqSize = 'width: 18em; height: 28em; transition: 1s;'
+const noSquare = 'width: 0; height: 0; transition: 1s;'
+
 function sq1ToggleExpand() {
     if(square1Expanded === false){
         square1.style="width: 18em; transition: 1s;"
-    // document.querySelector('.sq-1-init-content').classList.add('fade out');
-    setTimeout(function(){
-        square1.style="width: 18em; height: 28em; transition: 1s;"
-        document.querySelector('.sq-1-exp-content').style="display: flex;"
-        document.querySelector('.sq-1-init-content').style="display: none;"
+        // document.querySelector('.sq-1-init-content').classList.add('fade out');
+        setTimeout(function(){
+            square1.style="width: 18em; height: 28em; transition: 1s;"
+            document.querySelector('.sq-1-exp-content').style="display: flex;"
+            console.log(document.querySelector('.sq-1-exp-content').style)
+            document.querySelector('.sq-1-init-content').style="display: none;"
+            
+        }, 1000)
         
-    }, 1000)
-    
-    square2.style="width: 0; height: 0; transition: 1s;"
-    square3.style="width: 0; height: 0; transition: 1s;"
-    square4.style="width: 0; height: 0; transition: 1s;"
-    square5.style="width: 0; height: 0; transition: 1s;"
-    square6.style="width: 0; height: 0; transition: 1s;"
+        square2.style="width: 0; height: 0; transition: 1s;"
+        document.querySelector('.sq-2-init-content').style="display: none";
+        square3.style="width: 0; height: 0; transition: 1s;"
+        document.querySelector('.sq-3-init-content').style="display: none";
+        square4.style="width: 0; height: 0; transition: 1s;"
+        document.querySelector('.sq-4-init-content').style="display: none";
+        square5.style="width: 0; height: 0; transition: 1s;"
+        document.querySelector('.sq-5-init-content').style="display: none";
+        square6.style="width: 0; height: 0; transition: 1s;"
+        document.querySelector('.sq-6-init-content').style="display: none";
 
-    square1Expanded = true;
+        square1Expanded = true;
 
+    }else if(square1Expanded === true){
+        square1.style="width: 8.25em; transition: 1.1s;"
+        square2.style=initSqSize
+        square3.style=initSqSize
+        square4.style=initSqSize
+        square5.style=initSqSize
+        square6.style=initSqSize
+
+        square1Expanded = false;
     }
     
     

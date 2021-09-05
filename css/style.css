@@ -342,10 +342,6 @@ and (max-device-width : 480px) {
         margin: 0;
     }
 
-    .square-expanded-header {
-
-    }
-
     .square-1 {
         background-color: rgb(54,	0,	0);
         /* border: 5px solid rgb(54,	0,	0); */
@@ -356,7 +352,9 @@ and (max-device-width : 480px) {
         display: none;
     }
 
-    
+    .square-expanded-header {
+        display: flex;
+    }
 
     .square-2 {
         background-color: rgb(134,0,3);
