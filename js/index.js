@@ -313,50 +313,206 @@ const square4 = document.querySelector('.square-4');
 const square5 = document.querySelector('.square-5');
 const square6 = document.querySelector('.square-6');
 
-square1.addEventListener('click', sq1ToggleExpand);
+
+square1.addEventListener('click', expand1);
 
 let square1Expanded = false;
 
-// Square sizes
-const initSqSize = 'width: 8.25em; transition: 1s;'
-const expSqSize = 'width: 18em; height: 28em; transition: 1s;'
-const noSquare = 'width: 0; height: 0; transition: 1s;'
-
-function sq1ToggleExpand() {
+function expand1() {
     if(square1Expanded === false){
-        square1.style="width: 18em; transition: 1s;"
-        // document.querySelector('.sq-1-init-content').classList.add('fade out');
-        setTimeout(function(){
-            square1.style="width: 18em; height: 28em; transition: 1s;"
-            document.querySelector('.sq-1-exp-content').style="display: flex;"
-            console.log(document.querySelector('.sq-1-exp-content').style)
-            document.querySelector('.sq-1-init-content').style="display: none;"
-            
-        }, 1000)
-        
-        square2.style="width: 0; height: 0; transition: 1s;"
-        document.querySelector('.sq-2-init-content').style="display: none";
-        square3.style="width: 0; height: 0; transition: 1s;"
-        document.querySelector('.sq-3-init-content').style="display: none";
-        square4.style="width: 0; height: 0; transition: 1s;"
-        document.querySelector('.sq-4-init-content').style="display: none";
-        square5.style="width: 0; height: 0; transition: 1s;"
-        document.querySelector('.sq-5-init-content').style="display: none";
-        square6.style="width: 0; height: 0; transition: 1s;"
-        document.querySelector('.sq-6-init-content').style="display: none";
+        square1.style="width: 18em; height: 28em;";
+        document.querySelector('.sq-1-exp-content').style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start;";
+        document.querySelector('.sq-1-init-content').style="display: none;";
+        square2.style="display: none";
+        square3.style="display: none";
+        square4.style="display: none";
+        square5.style="display: none";
+        square6.style="display: none";
 
         square1Expanded = true;
+    };
+};
 
-    }else if(square1Expanded === true){
-        square1.style="width: 8.25em; transition: 1.1s;"
-        square2.style=initSqSize
-        square3.style=initSqSize
-        square4.style=initSqSize
-        square5.style=initSqSize
-        square6.style=initSqSize
+document.querySelector('#sq-1-close-btn').addEventListener('click', collapse1)
 
-        square1Expanded = false;
+function collapse1(){
+    if(square1Expanded === true){
+        square1.style="width: 8.25em;"
+        document.querySelector('.sq-1-exp-content').style="display: none;";
+        document.querySelector('.sq-1-init-content').style="display: flex;";
+        square2.style="width: 8.25em;"
+        square3.style="width: 8.25em;"
+        square4.style="width: 8.25em;"
+        square5.style="width: 8.25em;"
+        square6.style="width: 8.25em;"
+        setTimeout(function(){
+            square1Expanded = false;
+        },1)
+
     }
-    
-    
 }
+
+// Sqare 2
+
+square2.addEventListener('click', expand2);
+
+let square2Expanded = false;
+
+function expand2() {
+    if(square2Expanded === false){
+        square2.style="width: 18em; height: 28em;";
+        document.querySelector('.sq-2-exp-content').style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start;";
+        document.querySelector('.sq-2-init-content').style="display: none;";
+        square1.style="display: none";
+        square3.style="display: none";
+        square4.style="display: none";
+        square5.style="display: none";
+        square6.style="display: none";
+
+        square2Expanded = true;
+    };
+};
+
+document.querySelector('#sq-2-close-btn').addEventListener('click', collapse2)
+
+function collapse2(){
+    if(square2Expanded === true){
+        square2.style="width: 8.25em;"
+        document.querySelector('.sq-2-exp-content').style="display: none;";
+        document.querySelector('.sq-2-init-content').style="display: flex;";
+        square1.style="width: 8.25em;"
+        square3.style="width: 8.25em;"
+        square4.style="width: 8.25em;"
+        square5.style="width: 8.25em;"
+        square6.style="width: 8.25em;"
+        setTimeout(function(){
+            square2Expanded = false;
+        },1)
+
+    }
+}
+
+
+// Everything under here is for animated divs and I hated everything about designing it for the moment.  Maybe I'll come back to it, but I just want thigs to work rn, thx.
+
+// // Square sizes
+// const initSqSize = 'width: 8.25em; transition: 1s;'
+// const expSqSize = 'width: 18em; height: 28em; transition: 1s;'
+// const noSquare = 'width: 0; height: 0; transition: 1s;'
+
+// // Square 1 
+// square1.addEventListener('click', sq1ToggleExpand);
+
+// let square1Expanded = false;
+
+// function sq1ToggleExpand() {
+//     if(square1Expanded === false){
+//         square1.style="width: 18em; transition: 1s;"
+//         // document.querySelector('.sq-1-init-content').classList.add('fade out');
+//         setTimeout(function(){
+//             square1.style="width: 18em; height: 28em; transition: 1s;"
+//             document.querySelector('.sq-1-exp-content').style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start;"
+//             document.querySelector('.sq-1-init-content').style="display: none;"
+            
+//         }, 1000)
+        
+//         square2.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-2-init-content').style="display: none";
+//         square3.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-3-init-content').style="display: none";
+//         square4.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-4-init-content').style="display: none";
+//         square5.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-5-init-content').style="display: none";
+//         square6.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-6-init-content').style="display: none";
+
+//         square1Expanded = true;
+//     }
+// }
+
+// const sq1CloseBtn = document.querySelector('#sq-1-close-btn');
+
+// sq1CloseBtn.addEventListener('click', sq1ToggleClose);
+
+// function sq1ToggleClose(){
+//     if(square1Expanded === true){
+//         document.querySelector('.sq-1-exp-content').style="display: none;"
+//         square1.style=initSqSize
+//         square2.style=initSqSize
+//         square3.style=initSqSize
+//         square4.style=initSqSize
+//         square5.style=initSqSize
+//         square6.style=initSqSize
+
+//         // square1Expanded = false;
+//         setTimeout(function(){
+//             document.querySelector('.sq-1-init-content').style="display: flex;"
+//             document.querySelector('.sq-2-init-content').style="display: flex;"
+//             document.querySelector('.sq-3-init-content').style="display: flex;"
+//             document.querySelector('.sq-4-init-content').style="display: flex;"
+//             document.querySelector('.sq-5-init-content').style="display: flex;"
+//             document.querySelector('.sq-6-init-content').style="display: flex;"
+//             square1Expanded = false
+//         }, 1000)
+//     }
+// }
+
+// // Square 2
+
+// square2.addEventListener('click', sq2ToggleExpand);
+
+// let square2Expanded = false;
+
+// function sq2ToggleExpand() {
+//     if(square1Expanded === false){
+//         square2.style="width: 18em; transition: 1s;"
+//         // document.querySelector('.sq-1-init-content').classList.add('fade out');
+//         setTimeout(function(){
+//             square2.style="width: 18em; height: 28em; transition: 1s;"
+//             document.querySelector('.sq-2-exp-content').style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start;"
+//             document.querySelector('.sq-2-init-content').style="display: none;"
+            
+//         }, 1000)
+        
+//         square1.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-1-init-content').style="display: none";
+//         square3.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-3-init-content').style="display: none";
+//         square4.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-4-init-content').style="display: none";
+//         square5.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-5-init-content').style="display: none";
+//         square6.style="width: 0; height: 0; transition: 1s;"
+//         document.querySelector('.sq-6-init-content').style="display: none";
+
+//         square2Expanded = true;
+//     }
+// }
+
+// const sq2CloseBtn = document.querySelector('#sq-2-close-btn');
+
+// sq2CloseBtn.addEventListener('click', sq2ToggleClose);
+
+// function sq2ToggleClose(){
+//     if(square2Expanded === true){
+//         document.querySelector('.sq-2-exp-content').style="display: none;"
+//         square1.style=initSqSize
+//         square2.style=initSqSize
+//         square3.style=initSqSize
+//         square4.style=initSqSize
+//         square5.style=initSqSize
+//         square6.style=initSqSize
+
+//         // square1Expanded = false;
+//         setTimeout(function(){
+//             document.querySelector('.sq-1-init-content').style="display: flex;"
+//             document.querySelector('.sq-2-init-content').style="display: flex;"
+//             document.querySelector('.sq-3-init-content').style="display: flex;"
+//             document.querySelector('.sq-4-init-content').style="display: flex;"
+//             document.querySelector('.sq-5-init-content').style="display: flex;"
+//             document.querySelector('.sq-6-init-content').style="display: flex;"
+//             square2Expanded = false
+//         }, 1000)
+//     }
+// }
