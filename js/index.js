@@ -52,7 +52,7 @@ function expandReso() {
         document.querySelector('.band-content-5').style="display: none;";
         resoExpanded = true;
         setTimeout(function(){
-            document.querySelector('.reservation-content').style="display: block;";
+            document.querySelector('.reservation-content').style="display: flex;";
         }, 1000)
 
         // Allow button pushing again after animation is finished and content has been displayed
@@ -238,18 +238,20 @@ function expandGallery() {
     };
 };
 
-// 4 - Contact Expander
+// 4 - Story Expander
 
-const contactToggleBtn = document.querySelector('.contact-expand-toggle');
+const storyToggleBtn = document.querySelector('.story-expand-toggle');
 
-contactToggleBtn.addEventListener('click', expandContact);
+storyToggleBtn.addEventListener('click', expandStory);
 
-let contactExpanded = false;
+let storyExpanded = false;
 
-function expandContact(){
-    if(contactExpanded === false && btnDisable === false){
-        document.querySelector('.expand-contact').style="display: none;";
-        document.querySelector('.unexpand-contact').style="display: inline-block;";
+function expandStory(){
+    if(storyExpanded === false && btnDisable === false){
+        // Disable button during animation
+        btnDisable = true;
+        document.querySelector('.expand-story').style="display: none;";
+        document.querySelector('.unexpand-story').style="display: inline-block;";
 
         // Shifts the sun and hero over to the right and up a little
         document.querySelector('.sun').style="transition: 1s; left: 60%; top: 2%;"
@@ -264,10 +266,10 @@ function expandContact(){
         document.querySelector('.band-content-3').style="display: none;";
         document.querySelector('.band-content-5').style="display: none;";
 
-        contactExpanded = true;
+        storyExpanded = true;
 
         setTimeout(function(){
-            document.querySelector('.contact-content').style="display: block;";
+            document.querySelector('.story-content').style="display: block;";
         }, 1000)
 
         // Allow button pushing again after animation is finished and content has been displayed
@@ -275,9 +277,11 @@ function expandContact(){
             btnDisable = false;
         }, 1000)
 
-    }else if(contactExpanded === true && btnDisable === false){
-        document.querySelector('.expand-contact').style="display: inline-block;";
-        document.querySelector('.unexpand-contact').style="display: none;";
+    }else if(storyExpanded === true && btnDisable === false){
+        // Disable button during animation
+        btnDisable = true;
+        document.querySelector('.expand-story').style="display: inline-block;";
+        document.querySelector('.unexpand-story').style="display: none;";
 
         // Shifts the sun and hero back to original position
         document.querySelector('.sun').style="transition: 1s; left: 50%; top: 4%"
@@ -295,8 +299,8 @@ function expandContact(){
             document.querySelector('.band-content-5').style="display: block;";
         }, 1000)
 
-        contactExpanded = false;
-        document.querySelector('.contact-content').style="display: none;";
+        storyExpanded = false;
+        document.querySelector('.story-content').style="display: none;";
 
         // Allow button pushing again after animation is finished and content has been displayed
         setTimeout(function(){
@@ -315,6 +319,8 @@ let menuExpanded = false;
 
 function expandMenu(){
     if(menuExpanded === false && btnDisable === false){
+        // Disable button during animation
+        btnDisable = true;
         document.querySelector('.expand-menu').style="display: none;";
         document.querySelector('.unexpand-menu').style="display: inline-block;";
 
@@ -341,7 +347,10 @@ function expandMenu(){
         setTimeout(function(){
             btnDisable = false;
         }, 1000)
+        
     }else if(menuExpanded === true && btnDisable === false){
+        // Disable button during animation
+        btnDisable = true;
         document.querySelector('.expand-menu').style="display: inline-block;";
         document.querySelector('.unexpand-menu').style="display: none;";
 

@@ -6,6 +6,10 @@
     display: none;
 }
 
+header {
+    display: none;
+}
+
 body {
     /* background-image: -webkit-linear-gradient(rgba(250, 207, 176, 0.7), rgba(255, 255, 255, 0.9)), url(../img/rvs-n-cacti-bg.png); */
     background: linear-gradient(to bottom right,rgb(212, 238, 238) ,rgba(165, 206, 206,0.9));
@@ -48,6 +52,7 @@ h1 {
     padding: 0 0 0 0;
 }
 
+h2,
 h3 {
     color: rgb(246,	244,	181	);
     text-align: left;
@@ -125,7 +130,14 @@ p {
 
 .reservation-content {
     display: none;
+    margin: 0.5em;
+    padding: 0.6em;
+    padding-top: 0.8em;
+    width: 50%;
+    height: 26em;
     background-color: rgb(134,0,3);
+    border-radius: 1em 1em 0 0;
+    justify-content: center;
 }
 
 .content p {
@@ -228,14 +240,14 @@ p {
 
 footer {
     position: fixed;
-    padding: 1em 1em 0 1em;
+    padding: 1em 1em 1em 1em;
     width: 100%;
-    height: 5em;
+    height: 4.5em;
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5em;
-    z-index: -1;
+    margin-bottom: 0em;
+    /* z-index: -1; */
 }
 
 footer ul {
@@ -247,12 +259,12 @@ footer ul li {
     display: inline-block;
     text-decoration: none;
     margin: 0 0.3em;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 footer span {
     font-family: 'Indie Flower', cursive;
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 
 footer a {
@@ -266,7 +278,7 @@ footer a:hover {
     transition: 0.3s;
 }
 
-.bands h3 {
+.bands h2 {
     display: inline-block;
 }
 
@@ -276,7 +288,32 @@ footer a:hover {
     margin: 0.5em;
     padding: 0.5em;
     height: 25em;
-    width: 50%;
+    width: 55%;
+}
+
+.gallery-pic {
+    width: 80%;
+    height: 25em;
+}
+
+.gallery-content img {
+    width: 100%;
+    height: auto;
+    border-radius: .5em;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-arrow i,
+.right-arrow i {
+    width: 3em;
+    color: rgb(236,	151,7);
+    text-align: center;
 }
 
 /* Offer */
@@ -286,6 +323,10 @@ footer a:hover {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
+    width: 60%;
+    margin: 0;
+    padding: 0.5em;
+
 }
 
 .offer-column-A,
@@ -299,6 +340,7 @@ footer a:hover {
     height: 20em;
     border-radius: 1em;
     margin: 0.5em;
+    padding: 0.25em;
 }
 
 .offer-column-B {
@@ -337,6 +379,12 @@ footer a:hover {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Story */
+
+.story-content p {
+    font-size: 1.25em;
+}
+
 
 /* Menu */
 
@@ -346,12 +394,14 @@ footer a:hover {
     border-radius: 1em;
 }
 
-.menu-column1 {
+.menu-column-1,
+.menu-column-2 {
     display: block;
+    width: 50%;
 }
 
-.menu-column2 {
-    display: block;
+.menu h5 {
+    border-bottom: 1px solid rgb(246,	244,	181	);
 }
 
 .menu ul {
@@ -361,7 +411,7 @@ footer a:hover {
 }
 
 .menu p {
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin: 0.3em;
     padding: 0;
 }
@@ -372,6 +422,10 @@ footer a:hover {
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
+
+/* My own custom nececities */
+/* 1.) Move the footer to a mini header if the window is too short. */
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
