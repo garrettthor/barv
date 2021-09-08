@@ -108,7 +108,7 @@ function expandOffer() {
         document.querySelector('.band-content-5').style="display: none;";
         offerExpanded = true;
         setTimeout(function(){
-            document.querySelector('.offer-content').style="display: block;";
+            document.querySelector('.offer-content').style="display: flex;";
         }, 1000)
     } else if(offerExpanded === true){
         document.querySelector('.expand-offer').style="display: inline-block;";

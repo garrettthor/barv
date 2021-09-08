@@ -56,8 +56,9 @@ h3 {
 h4 {
     color: rgb(246,	244,	181	);
     text-shadow: 1px 1px rgb(54,	0,	0);
-    font-family: 'Indie Flower', cursive;
-    font-size: 26px;
+    font-family: 'OLD SPORT 01 COLLEGE NCV';
+    font-weight: 50;
+    font-size: 40px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -66,11 +67,14 @@ h4 {
 h5 {
     color: rgb(246,	244,	181	);
     text-shadow: 1px 1px rgb(54,	0,	0);
-    font-family: 'Indie Flower', cursive;
-    font-size: 26px;
-    text-align: center;
+    font-family: 'Glory', sans-serif;
+    font-size: 30px;
     margin: 0;
     padding: 0;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .mobile-banner-zone {
@@ -107,7 +111,7 @@ h5 {
 
 .content {
     display: none;
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
     width: 55%;
     border-radius: 1em;
@@ -121,13 +125,7 @@ h5 {
 
 .content p {
     color: rgb(246,	244,	181	);
-    font-family: 'Indie Flower', cursive;
     font-size: 1.5em;
-}
-
-.offer-content {
-    display: none;
-    background-color: rgb(209,44,31);
 }
 
 .gallery-content {
@@ -231,7 +229,7 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 }
 
 footer ul {
@@ -264,6 +262,93 @@ footer a:hover {
 
 .bands h3 {
     display: inline-block;
+}
+
+/* Offer */
+
+.offer-content {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.offer-column-A,
+.offer-column-B,
+.offer-column-C {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background-color: rgb(57,99,81);
+    height: 20em;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+.offer-column-B {
+
+}
+
+.offer-column-C {
+    width: 50%;
+}
+
+.offer-content p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0.25em;
+}
+
+.offer-content h4 {
+    padding-top: 0.25em;
+    font-size: 2.5em;
+    width: 90%;
+    border-bottom: 1px solid rgb(246,	244,	181	);
+}
+
+.offer-content h5 {
+    font-size: 1.5em;
+    padding-top: 0.4em;
+}
+
+.offer-content ul {
+    margin-top: 0.3em;
+    padding-left: 1em;
+}
+
+.offer-content li {
+    color: rgb(246,	244,	181	);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    background-color: rgb(125, 192, 185);
+    border-radius: 1em;
+}
+
+.menu-column1 {
+    display: block;
+}
+
+.menu-column2 {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.menu p {
+    font-size: 1.25em;
+    margin: 0.3em;
+    padding: 0;
 }
 
 
