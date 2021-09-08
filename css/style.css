@@ -32,6 +32,11 @@ a {
     display: inline-block
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 h1 {
     color: rgb(246,	244,	181	);
     text-shadow: 2px 2px rgb(54,	0,	0);
@@ -56,7 +61,7 @@ h3 {
 h4 {
     color: rgb(246,	244,	181	);
     text-shadow: 1px 1px rgb(54,	0,	0);
-    font-family: 'OLD SPORT 01 COLLEGE NCV';
+    font-family: 'Glory', sans-serif;
     font-weight: 50;
     font-size: 40px;
     text-align: center;
@@ -230,6 +235,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
+    z-index: -1;
 }
 
 footer ul {
@@ -262,6 +268,15 @@ footer a:hover {
 
 .bands h3 {
     display: inline-block;
+}
+
+/* Gallery */
+
+.gallery-content{
+    margin: 0.5em;
+    padding: 0.5em;
+    height: 25em;
+    width: 50%;
 }
 
 /* Offer */
