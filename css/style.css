@@ -1,3 +1,21 @@
+/* Color Palette */
+
+rgb(212, 238, 238)
+rgba(165, 206, 206,0.9)
+
+rgb(54,	0,	0);
+rgb(134,0,3);
+rgb(209,44,31);
+rgb(236,	151,7);
+rgb(246,	244,	181	);
+rgb(125, 192, 185);
+rgb(57,99,81);
+
+
+
+/* -- */
+
+
 * {
     box-sizing: border-box;
 }
@@ -265,6 +283,7 @@ footer ul li {
 footer span {
     font-family: 'Indie Flower', cursive;
     margin-top: 1em;
+    margin-right: 2em;
 }
 
 footer a {
@@ -396,8 +415,9 @@ footer a:hover {
 
 .menu-column-1,
 .menu-column-2 {
-    display: block;
+    display: flex;
     width: 50%;
+    align-items: center;
 }
 
 .menu h5 {
@@ -423,9 +443,6 @@ footer a:hover {
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
 
-/* My own custom nececities */
-/* 1.) Move the footer to a mini header if the window is too short. */
-
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -433,11 +450,9 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
 
-    body {
-        background: linear-gradient(to bottom right,rgb(125, 192, 185),rgb(212, 238, 238) );
-    }
-
-    .bands {
+    .biggest-bg,
+    main,
+    footer {
         display: none;
     }
 
@@ -445,132 +460,43 @@ and (max-device-width : 480px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: flex-end;
         width: 100%;
+        padding: 0.5em;
     }
 
-    .mobile-squares {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: auto;
-        width: 19em;
-        margin:0;
-        padding:0;
-    }
-
-    .mobile-banner-zone {
+    .hamburger {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
+        width: 2em;
+        height: 2em;
+        border-radius: 0.5em;
     }
 
-    #barv-logo {
-        width: 18em;
+    .hamburger:hover {
+        cursor: pointer;
     }
 
-    .square {
+    .hamburger i {
+        color: rgb(209,44,31);
+        font-size: 2em;
+    }
+
+    .banner-bg {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content:space-evenly;
-        height: 8.25em;
-        width: 8.25em;
-        border-radius: 1em;
-        margin: 0.5em;
-    }
-
-    .square i {
-        font-size: 3em;
-        color: rgb(246,	244,	181	);
-        margin: 0;
-        margin-bottom: 0.25em;
-    }
-
-    .square h3 {
-        font-size: 1.25em;
-        text-align: center;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-    }
-    .square-init-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .square-expanded-content {
-        height: 80%;
-    }
-
-    .square-1 {
         background-color: rgb(54,	0,	0);
-        /* border: 5px solid rgb(54,	0,	0); */
-        /* background-color: rgba(54,	0,	0, 0.7); */
+        width: auto;
     }
 
-    .sq-1-exp-content {
-        display: none;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .square-expanded-header {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-        margin-top: 1em;
-    }
-
-    .square-2 {
-        background-color: rgb(134,0,3);
-        /* border: 5px solid rgb(134,0,3); */
-        /* background-color: rgba(134,0,3,0.7); */
-    }
-
-    .sq-2-exp-content {
-        display: none;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .square-2 h3 {
-        font-size: 1.15em;
-    }
-
-    .square-3 {
-        background-color:  rgb(209,44,31);
-        /* border: 5px solid  rgb(209,44,31); */
-        /* background-color: rgba(209,44,31,0.6); */
-    }
-
-    .square-4 {
-        background-color:  rgb(236,	151,7);
-        /* border: 5px solid  rgb(236,	151,7); */
-        /* background-color: rgba(236,	151,7,0.7); */
-    }
-
-    .square-5 {
-        background-color:   rgb(57,99,81);
-        /* border: 5px solid   rgb(57,99,81); */
-        /* background-color:  rgb(104, 114, 110,0.8); */
-    }
-
-    .square-6 {
-        background-color:  rgb(49, 174, 136);
-        /* border: 5px solid  rgb(49, 174, 136); */
-        /* background-color: rgba(49, 174, 136,0.7); */
-    }
-
-    .square-6 img {
-        /* margin-top: 2.75em; */
-        width: 7em;
-    }
-
-    footer {
-        display: none;
+    .banner-bg img {
+        width: 95%;
     }
 
     .fade-in {
