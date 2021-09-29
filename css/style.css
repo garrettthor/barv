@@ -400,6 +400,10 @@ footer a:hover {
 
 /* Story */
 
+.story-content {
+    background: rgb(134,0,3);
+}
+
 .story-content p {
     font-size: 1.25em;
 }
